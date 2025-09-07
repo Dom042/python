@@ -61,3 +61,66 @@ Student_Courses = ("Maths", "English", "Biology", "Chemistry", "Physics")
 print(Student_Courses)
 print(Student_Courses[::-1])
 print(Student_Courses[1:5])
+
+
+# ======================LIST=============
+
+# Meat
+# Vegetable
+# Corn Flour
+
+
+name1 = "Kamsy"
+name2 = "justina"
+name3 = "Despina"
+
+
+classNames = ["Kamsy","justina", "despina"]
+print(len(classNames))
+# prints the values according to the index
+print(classNames [0])
+print(classNames [1])
+print(classNames [2])
+
+
+name1 = input("Enter your name: ")
+height = input("Enter your height: ")
+gender = input("Enter your gender: ")
+isMarried = input("Are you married? (true/false): ")
+myDetails = ["Kamsy", 5.6, "false", False]
+
+print(type(myDetails))
+con = list((name1, height, gender, isMarried))
+
+
+# method
+myDetails.append
+
+
+# finction
+print(type(con))
+
+
+
+
+
+
+
+
+
+
+
+
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+
+
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+
+
+
+# Assignment is on List and Tuple 
+

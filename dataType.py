@@ -1,8 +1,8 @@
-# INTEGER
 num = 10
 print(type(num), num)
 
 
+# INTEGER
 y = -5
 
 m = 123456789
@@ -21,13 +21,6 @@ print(type(user), user)
 d= 1.3e4
 print(type(d), d)
 
-
-
-
-
-# Complex Number
-give = 3 + 4j
-print(type(give),give)
 
 
 add = 9j + 4
