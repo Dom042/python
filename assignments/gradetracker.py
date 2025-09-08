@@ -6,7 +6,7 @@ students = {}  # Dictionary to store student names and grades
 def add_student(name):
     """Add a new student with an empty grade list"""
     if name in students:
-        print(f"❌ Student '{name}' already exists!")
+        print(f"Student '{name}' already exists!")
     else:
         students[name] = []
         print(f"✅ Student '{name}' added successfully.")
@@ -15,7 +15,7 @@ def add_student(name):
 def add_grade(name, grade):
     """Add a grade for an existing student"""
     if name not in students:
-        print(f"❌ Student '{name}' not found!")
+        print(f"Student '{name}' not found!")
     else:
         students[name].append(grade)
         print(f"✅ Grade {grade} added for '{name}'.")
@@ -24,10 +24,10 @@ def add_grade(name, grade):
 def calculate_average(name):
     """Calculate the average grade of a student"""
     if name not in students:
-        print(f"❌ Student '{name}' not found!")
+        print(f"Student '{name}' not found!")
         return None
     if not students[name]:
-        print(f"ℹ️ No grades available for '{name}'.")
+        print(f"No grades available for '{name}'.")
         return None
     return sum(students[name]) / len(students[name])
 
@@ -35,7 +35,7 @@ def calculate_average(name):
 def highest_average():
     """Find the student with the highest average grade"""
     if not students:
-        print("❌ No students in the tracker yet.")
+        print("No students in the tracker yet.")
         return None
     top_student = None
     top_avg = -1
@@ -51,7 +51,7 @@ def highest_average():
 def display_students():
     """Display all students and their grades in a table"""
     if not students:
-        print("❌ No students to display.")
+        print("No students to display.")
         return
     print("\n📘 Student Grades:")
     print("-" * 40)

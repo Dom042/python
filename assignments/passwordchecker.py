@@ -1,13 +1,14 @@
+# Defines a function called password_checker.
 def password_checker():
     while True:
-        password = input("Enter a password: ")
+        password = input("Enter a password: ") # Keeps asking for a password until a strong one is entered. input() collects user input.
 
-        # Criteria flags
+        # These flags track whether the password has: one uppercase letter, one lowercase letter, and one digit.
         has_upper = False
         has_lower = False
         has_digit = False
 
-        # Loop through characters
+        # Goes through each character in the password. Sets flags to True if conditions are met.
         for char in password:
             if char.isupper():
                 has_upper = True
@@ -16,15 +17,17 @@ def password_checker():
             elif char.isdigit():
                 has_digit = True
 
-        # Check conditions
+        # First checks if the password has minimum length of 8.
+        # Then checks for uppercase, lowercase, and digit.
+        # If all conditions are satisfied → prints success message ✅ and breaks out of the loop.
         if len(password) < 8:
-            print("❌ Password too short! Must be at least 8 characters.")
+            print("Password too short! Must be at least 8 characters.")
         elif not has_upper:
-            print("❌ Password must contain at least one uppercase letter.")
+            print("Password must contain at least one uppercase letter.")
         elif not has_lower:
-            print("❌ Password must contain at least one lowercase letter.")
+            print("Password must contain at least one lowercase letter.")
         elif not has_digit:
-            print("❌ Password must contain at least one number.")
+            print("Password must contain at least one number.")
         else:
             print("✅ Strong password set successfully!")
             break  # exit loop when valid
