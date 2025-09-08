@@ -1,3 +1,18 @@
+"""
+The program is a grade checker that asks the user to enter a score between 0 and 100.
+
+It uses input validation to make sure the user enters a proper number and that the number is within the valid range.
+
+Based on the score, the program assigns a letter grade (A–F) using conditional statements (if, elif, else).
+
+Alongside the grade, it also provides a motivational message tailored to the student’s performance.
+
+If the user enters an invalid number (like -5, 150, or text like "hello"), the program shows an error message instead of crashing.
+
+The code is wrapped in a function (grade_checker) so it’s neat, reusable, and easy to call.
+"""
+
+
 def grade_checker():
     try:
         score = int(input("Enter your score (0-100): "))

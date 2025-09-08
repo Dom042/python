@@ -1,3 +1,11 @@
+"""
+ATM Simulator
+
+The program is a basic functions of an ATM: checking balance, depositing money, and withdrawing money.
+"""
+
+
+
 def atm_simulator():
     balance = 1000  # starting balance
     
@@ -9,7 +17,7 @@ def atm_simulator():
     
     try:
         choice = int(input("Choose an option: "))
-
+    
         if choice == 1:
             print(f"Your current balance is: ${balance}")
 

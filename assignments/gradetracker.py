@@ -1,4 +1,15 @@
-# Student Grade Tracker
+"""
+Student Grade Tracker
+
+The program helps you manage students and their grades. It can:
+Add students
+Add grades
+Calculate averages
+Find the top-performing student
+Display everything neatly in a table
+"""
+
+
 
 students = {}  # Dictionary to store student names and grades
 
@@ -9,7 +20,7 @@ def add_student(name):
         print(f"Student '{name}' already exists!")
     else:
         students[name] = []
-        print(f"✅ Student '{name}' added successfully.")
+        print(f"Student '{name}' added successfully.")
 
 
 def add_grade(name, grade):
@@ -18,7 +29,7 @@ def add_grade(name, grade):
         print(f"Student '{name}' not found!")
     else:
         students[name].append(grade)
-        print(f"✅ Grade {grade} added for '{name}'.")
+        print(f"Grade {grade} added for '{name}'.")
 
 
 def calculate_average(name):
@@ -53,7 +64,7 @@ def display_students():
     if not students:
         print("No students to display.")
         return
-    print("\n📘 Student Grades:")
+    print("\nStudent Grades:")
     print("-" * 40)
     print(f"{'Name':<15} {'Grades':<15} {'Average'}")
     print("-" * 40)
@@ -77,4 +88,4 @@ display_students()
 
 top_student, top_avg = highest_average()
 if top_student:
-    print(f"\n🏆 Top Student: {top_student} with average {top_avg:.2f}")
+    print(f"\nTop Student: {top_student} with average {top_avg:.2f}")
