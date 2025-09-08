@@ -51,7 +51,7 @@ def highest_average():
     top_student = None
     top_avg = -1
     for name, grades in students.items():
-        if grades:  # only if student has grades
+        if grades:  
             avg = sum(grades) / len(grades)
             if avg > top_avg:
                 top_avg = avg
@@ -75,7 +75,7 @@ def display_students():
     print("-" * 40)
 
 
-# Example usage
+
 add_student("Alice")
 add_student("Bob")
 

@@ -44,5 +44,5 @@ def grade_checker():
         print("Invalid input! Please enter a number between 0 and 100.")
 
 
-# Run the program
+
 grade_checker()

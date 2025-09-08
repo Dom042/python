@@ -7,7 +7,7 @@ The program is a basic functions of an ATM: checking balance, depositing money, 
 
 
 def atm_simulator():
-    balance = 1000  # starting balance
+    balance = 1000 # Initial balance
     
     print("Welcome to Simple ATM Simulator")
     print("\nATM Menu:")
@@ -46,5 +46,5 @@ def atm_simulator():
         print("Invalid input! Please enter a number.")
 
 
-# Run the ATM simulator
+
 atm_simulator()
